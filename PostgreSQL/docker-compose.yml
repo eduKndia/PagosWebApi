@@ -1,0 +1,9 @@
+pg-dev-db:  
+  build: ./base
+  ports:
+    - "5431:5432"
+  expose:
+    - "5431"
+  volumes:
+          - ./base/postgres-dev-data:/var/lib/postgresql/data
+
